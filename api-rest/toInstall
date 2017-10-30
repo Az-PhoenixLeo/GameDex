@@ -1,0 +1,6 @@
+apt-get install nodejs-legacy
+npm init
+npm install express --save
+npm install body-parser --save
+npm install nodemon --save
+sudo npm install -g nodemon --unsafe-perm 
