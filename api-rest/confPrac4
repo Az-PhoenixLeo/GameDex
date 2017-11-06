@@ -1,0 +1,91 @@
+R1
+
+conf t
+in fa 0/0
+ip address 10.11.0.1 255.255.255.0
+no shu
+exit
+
+in fa 1/0
+ip address 10.12.0.2 255.255.255.0
+no shu
+exit
+
+router eigrp 777
+network 4.0.0.0
+network 10.0.0.0
+network 1.0.0.0
+no auto-summary
+
+in loopback 1
+ip address 1.1.1.1 255.255.255.255
+---------------------------------
+R2
+
+conf t
+in fa 1/0
+ip address 10.12.0.1 255.255.255.0
+no shu
+exit
+
+in fa 0/0
+ip address 10.23.0.2 255.255.255.0
+no shu
+exit
+
+router eigrp 777
+network 4.0.0.0
+network 10.0.0.0
+network 1.0.0.0
+no auto-summary
+--------------------------------
+R3
+
+conf t
+in fa 0/0
+ip address 10.23.0.1 255.255.255.0
+no shu
+exit
+
+in fa 1/0
+ip address 10.34.0.2 255.255.255.0
+no shu
+exit
+
+router eigrp 777
+network 4.0.0.0
+network 10.0.0.0
+no auto-summary
+exit
+---------------------------------
+R4
+
+conf t
+in fa 1/0
+ip address 10.34.0.1 255.255.255.0
+no shu
+exit
+
+in fa 0/0
+ip address 10.44.0.2 255.255.255.0
+no shu
+exit
+
+in loopback 0
+ip address 4.4.4.4 255.255.255.255
+exit
+
+router eigrp 777
+network 4.0.0.0
+network 10.0.0.0
+no auto-summary
+exit
+---------------------------------
+
+set pcname PC1
+ip 10.11.0.20 10.11.0.1 255.255.255.0
+
+---------------------------------------
+
+set pvname PC2
+ip 10.44.0.20 10.44.0.1 255.255.255.0
