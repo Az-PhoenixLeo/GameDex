@@ -1,14 +1,28 @@
 header {
 	background-color: lightblue;
 	width: 100%;
+	/*boostrap tiene un sticky para el header
+	se pone -->
+	class="sticky-top"
+	*/
 }
 
 footer {
 	background-color: lightblue;
+	/*
 	position: sticky;
+	*/
 	left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 1;
+}
+
+body, html {
+	/*
+	overflow-x: hidden;
+	overflow-y: auto;
+	*/
 }
 
 #navbarTogglerDemo01 {
@@ -17,9 +31,9 @@ footer {
 
 #menuRegistro {
 	background-color: #ffffe6;
-	left: 0;
-	position: fixed;
-	z-index: 1;
+	/*
+	overflow-y: scroll;
+    overflow-x: hidden;
 	/*position: fixed;
 	margin-top: 8%;*/
 }
@@ -37,6 +51,9 @@ footer {
 	*/
 	/*margin-left:33.33%;
 	margin-top: 8%;*/
+	/*
+	overflow-y: scroll;
+	*/
 }
 
 #vacio {
