@@ -3,8 +3,10 @@
 
 header {
 	
-	background-color: lightblue;
-	width: 100%;*
+	/*background-color: lightblue;*/
+	width: 100%;
+    background-image: url(../img/pho/fondoTitulo3.png);
+    background-size: 100% 100%;
 	/*boostrap tiene un sticky para el header
 	se pone -->
 	class="sticky-top"
@@ -24,7 +26,10 @@ footer {
     z-index: 1;
 }
 
-body, html {
+body {
+    /*
+    background-image: url(../img/bit.jpg);*/
+    background-color: black;
 	/*
 	overflow-x: hidden;
 	overflow-y: auto;
@@ -49,7 +54,7 @@ body, html {
 }
 
 #tarjetas {
-	background-color: #e6ffe6;
+	/*background-color: #e6ffe6;*/
     	/*
 	max-height: 500px;
 	max-width: 100%;
@@ -100,6 +105,8 @@ body, html {
 #cardta {
     width: 95%;
     margin: 15px;
+    background-image: url(../img/pho/cristal01.png);
+    background-size: 100% 100%;
 }
 
 .imagenCard{
@@ -117,10 +124,13 @@ body, html {
     left: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background-image: url(../img/pho/fondoTitulo3.png);
+    background-size: 100% 100%;
+    /*background: #7386D5;*/
     color: #fff;
     transition: all 0.3s;
     padding: 15px;
+    padding-top: 5%;
 }
 
 #sidebar.active {
@@ -155,6 +165,14 @@ body, html {
 #sidebar ul li.active > a, a[aria-expanded="true"] {
     color: #fff;
     background: #6d7fcc;
+}
+
+#tituloP {
+    background-image: url(../img/pho/fondoTitulo3.png);
+    background-size: 100% 100%;
+    padding: 15px;
+    padding-left: 20px;
+
 }
 
 
