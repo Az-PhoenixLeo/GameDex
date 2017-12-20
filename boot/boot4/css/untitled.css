@@ -2,9 +2,9 @@
 
 
 header {
-	
-	/*background-color: lightblue;*/
-	width: 100%;
+  
+  /*background-color: lightblue;*/
+  width: 100%;
     
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e50000+0,d80000+25,990000+65,a50000+100 */
     background: #e50000; /* Old browsers */
@@ -19,21 +19,21 @@ header {
 
     -webkit-clip-path: polygon(5% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 95% 100%, 92% 85%, 89% 85%, 86% 100%, 14% 100%, 11% 85%, 8% 85%);
     clip-path: polygon(5% 100%, 0 100%, 0 0, 100% 0, 100% 100%, 95% 100%, 92% 85%, 89% 85%, 86% 100%, 14% 100%, 11% 85%, 8% 85%);
-	/*boostrap tiene un sticky para el header
-	se pone -->
-	class="sticky-top"
-	*/
+  /*boostrap tiene un sticky para el header
+  se pone -->
+  class="sticky-top"
+  */
 }
 
 footer {
 
 clip-path: polygon(0 100%, 0 15%, 5% 16%, 8% 0, 11% 0, 14% 15%, 30% 16%, 35% 35%, 65% 35%, 70% 15%, 86% 15%, 89% 0, 92% 0, 95% 15%, 100% 15%, 100% 100%);
 
-	
-	position: sticky;
-	
+  
+  position: sticky;
+  
     
-	left: 0;
+  left: 0;
     bottom: 0;
     
     width: 100%;
@@ -50,10 +50,10 @@ clip-path: polygon(0 100%, 0 15%, 5% 16%, 8% 0, 11% 0, 14% 15%, 30% 16%, 35% 35%
 body {
     
     background-image: url(../img/gridmeP.jpg);
-	/*
-	overflow-x: hidden;
-	overflow-y: auto;
-	*/
+  /*
+  overflow-x: hidden;
+  overflow-y: auto;
+  */
 }
 
 nav {
@@ -63,108 +63,11 @@ nav {
 }
 
 #navbarTogglerDemo01 {
-	text-align: center;
+  text-align: center;
 
     background-color: #ffffff9e;
 
     
-}
-
-#menuRegistro {
-	background-color: #ffffe6;
-	/*
-	overflow-y: scroll;
-    overflow-x: hidden;
-	/*position: fixed;
-	margin-top: 8%;*/
-}
-
-#menuRegistro-1 {
-	background-color: #ffa366;
-}
-
-#tarjetas {
-	/*background-color: #e6ffe6;*/
-    	/*
-	max-height: 500px;
-	max-width: 100%;
-	overflow-y: scroll;
-	*/
-	/*margin-left:33.33%;
-	margin-top: 8%;*/
-	/*
-	overflow-y: scroll;
-	*/
-}
-
-#vacio {
-	background-color: #ffe6f7;
-	/*margin-top: 8%;*/
-}
-
-#imagenUsuario {
-	width: 100%;
-	height: 100px;
-}
-
-#carouselExampleIndicators {
-    width: 100%;
-
-    border-style: solid;
-    border-color: white;
-
-
-}
-
-.carousel-item img {
-	width: 100%;
-	height: 40%;
-}
-
-/*
-.card-block img{
-	width: 100px;
-	height: 100px;
-	position: relative;
-	right: -20px;
-}
-*/
-
-/*
-.card img{
-	width: 300px;
-	height: 300px;
-}*/
-
-#cardta {
-    width: 95%;
-    margin: 15px;
-    /*
-    background-image: url(../img/pho/cristal01.png);
-    background-size: 100% 100%;*/
-    /*
-    border-style: solid;
-    border-color: white;
-    border-width: 4px;
-    */
-    border-radius: 5px;
-
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-    /*background-color: #ffffff9e;*/
-
-}
-
-#cards1{
-}
-
-.imagenCard{
-	width: 100%;
-	height: 100%;
 }
 
 /* ---------------------------------------------------
@@ -204,7 +107,7 @@ nav {
     margin-left: -300px;
 }
 
-#sidebar .sidebar-header {
+#sidebar.sidebar-header {
     padding: 20px;
     background: #6d7fcc;
 }
@@ -234,28 +137,6 @@ nav {
     background: #6d7fcc;
 }
 
-#tituloP {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
-    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
-
-    /*
-    border-style: solid;
-    border-color: white;
-    */
-
-    margin: 4px;
-
-    border-radius: 150px;
-
-    padding: 15px;
-    padding-left: 20px;
-
-}
-
-
 a[data-toggle="collapse"] {
     position: relative;
 }
@@ -268,6 +149,7 @@ a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
     font-family: 'Glyphicons Halflings';
     font-size: 0.6em;
 }
+
 a[aria-expanded="true"]::before {
     content: '\e260';
 }
