@@ -172,7 +172,6 @@ nav {
 #sidebar {
     width: 300px;
     position: fixed;
-    top: 130px;
     left: 0;
     height: 100vh;
     z-index: 999;
@@ -183,7 +182,7 @@ nav {
     border-width: 4px;
 
     padding: 15px;
-    padding-top: 140px;
+    padding-top: 60px;
     /*background-image: url(../img/pho/fondoTitulo3.png);*/
 
 
@@ -252,6 +251,8 @@ nav {
 
     padding: 15px;
     padding-left: 20px;
+
+    text-align: center;
 
 }
 
@@ -326,8 +327,6 @@ a.article, a.article:hover {
 @media (max-width: 768px) {
     #sidebar {
         margin-left: -300px;
-
-        top: 116px;
     }
     #sidebar.active {
         margin-left: 0;
@@ -352,9 +351,6 @@ a.article, a.article:hover {
         height: 100%;
     }
 
-    .togSidebar {
-        left: -200px;
-    }
 }
 
 
@@ -412,14 +408,24 @@ a.article, a.article:hover {
 }
 
 .togSidebar {
-    position: fixed;/* TAMAÑO DE HEADER */
-    top: 135px;
+    position: relative;/* TAMAÑO DE HEADER */
+    top: -60px;
     z-index: 1005;
 
-    clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    /*clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);*/
 }
 
 #sidebarCollapse{
+    position: fixed;
     height: 60px;
-    width: 300px;
+    width: 330px;
+       z-index: 1005;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.navbar-brand{
+    text-align: left;
 }
