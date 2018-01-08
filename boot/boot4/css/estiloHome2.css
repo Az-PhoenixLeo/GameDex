@@ -5,6 +5,7 @@ header {
 	
 	/*background-color: lightblue;*/
 	width: 100%;
+    /* height: 130px; */
     
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e50000+0,d80000+25,990000+65,a50000+100 */
     background: #e50000; /* Old browsers */
@@ -30,7 +31,7 @@ footer {
 clip-path: polygon(0 100%, 0 15%, 5% 16%, 8% 0, 11% 0, 14% 15%, 30% 16%, 35% 35%, 65% 35%, 70% 15%, 86% 15%, 89% 0, 92% 0, 95% 15%, 100% 15%, 100% 100%);
 
 	
-	position: sticky;
+	position: relative;
 	
     
 	left: 0;
@@ -173,20 +174,19 @@ nav {
 #sidebar {
     width: 300px;
     position: fixed;
-    top: 5%;
+
     left: 0;
     height: 100%;
     z-index: 999;
 
+    border-radius: 5px;
     border-style: solid;
     border-color: white;
     border-width: 4px;
 
     padding: 15px;
-    padding-top: 5%;
+    padding-top: 60px;
     /*background-image: url(../img/pho/fondoTitulo3.png);*/
-
-    clip-path: polygon(10% 0, 90% 0, 100% 10%, 100% 90%, 90% 100%, 10% 100%, 0 90%, 0 10%);
 
 
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
@@ -246,12 +246,16 @@ nav {
     border-color: white;
     */
 
-    margin: 4px;
+    /*margin: 4px;*/
+    margin-top: 4px;
+    margin-bottom: 4px;
 
     border-radius: 150px;
 
     padding: 15px;
     padding-left: 20px;
+
+    text-align: center;
 
 }
 
@@ -316,6 +320,7 @@ a.article, a.article:hover {
 }
 #content.active {
     width: 100%;
+    margin-left: 0;
 }
 
 
@@ -331,13 +336,138 @@ a.article, a.article:hover {
     }
     #content {
         width: 100%;
+        margin-left: 0;
     }
     #content.active {
+        /*
         width: calc(100% - 300px);
+        margin-left: 300px;
+        */
+        width: 100%;
+        margin-left: 0;
     }
     #sidebarCollapse span {
-        display: none;
+        /*display: none;*/
     }
+
+    header{
+        height: 100%;
+    }
+
 }
 
 
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .card-columns {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1300px) {
+    .card-columns {
+        column-count: 4;
+    }
+}
+
+.card-columns {
+    margin: 15px;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    margin: 5px;
+    border-width: 5px;
+    border-radius: 5px;
+
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+    background: -moz-linear-gradient(-45deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    /*background-color: #ffffff9e;*/
+}
+
+.togSidebar {
+    position: relative;/* TAMAÑO DE HEADER */
+    top: -60px;
+    z-index: 1005;
+
+    /*clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);*/
+}
+
+#sidebarCollapse{
+    position: fixed;
+    height: 60px;
+    width: 330px;
+       z-index: 1005;
+}
+
+.navbar{
+    text-align: center;
+}
+
+.navbar-brand{
+    text-align: left;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 998;
+}
+
+.togSidebar span{
+
+}
+
+#pie2{
+    position: relative;
+}
+
+#pie img{
+    width: 160px;
+    height: 50px;
+
+}
+
+.imgLogo{
+    position: relative;
+    top: 27px;
+    left: 17%;
+    width: 80px;
+    height: 40px;
+}
+
+/*
+00F0F0 azul bonito 
+*/

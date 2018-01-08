@@ -18,57 +18,52 @@
 
 <body>
 
+<!-- =====================================================
+    					HEADER
+======================================================== -->
   <header class="sticky-top">
-    <h3> Aqui van los logos y etc</h3>
+    <img class="log imgLogo" src="img/imagen.png">
     <!--BARRA DE NAVEGACIÓN -->
 
-   <div class="row justify-content-center ">
+   <div class=" ">
+
+   <div class="col-md-6 mx-auto">
+
         
-      <div class="col-md-6">
-        <div class="navbar-header">
-          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-            <i class="glyphicon glyphicon-align-left"></i>
-            <span>Toggle Sidebar</span>
-          </button>
-        </div>
 
-        <nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            <ul class="navbar-nav mr-0 mx-auto mt-2 mt-lg-0" >
-              <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Perfil</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Juegos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Jam</a>
-              </li>
-            </ul>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">Inicio</a>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="#">Perfil<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Juegos</a>
+            <a class="nav-item nav-link" href="#">Artículos</a>
+            <a class="nav-item nav-link" href="#">Jam</a>
           </div>
-
-        </nav>
-
-      </div>
+        </div>
+      </nav>  
+    </div>
     </div>
   </header>
 
 
 
-    <!-- Sidebar Holder -->
+<!-- =====================================================
+    					SIDEBAR
+======================================================== -->
   <nav id="sidebar">
-    <h4>MENU REGISTRO</h4>
+
+  			<div class="togSidebar">
+          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <i class="glyphicon glyphicon-align-left"></i>
+            <h2>Menú</h2>
+          </button>
+        </div>
+
+    <h4>REGISTRO</h4>
 
       <div class="row" id="datosUsuario">
 
@@ -121,55 +116,19 @@
         </div>  
       </div>
 
-                <!--
-                  <div class="sidebar-header">
-                      <h3>Bootstrap Sidebar</h3>
-                  </div>
-
-                  <ul class="list-unstyled components">
-                      <p>Dummy Heading</p>
-                      <li class="active">
-                          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                          <ul class="collapse list-unstyled" id="homeSubmenu">
-                              <li><a href="#">Home 1</a></li>
-                              <li><a href="#">Home 2</a></li>
-                              <li><a href="#">Home 3</a></li>
-                          </ul>
-                      </li>
-                      <li>
-                          <a href="#">About</a>
-                          <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                          <ul class="collapse list-unstyled" id="pageSubmenu">
-                              <li><a href="#">Page 1</a></li>
-                              <li><a href="#">Page 2</a></li>
-                              <li><a href="#">Page 3</a></li>
-                          </ul>
-                      </li>
-                      <li>
-                          <a href="#">Portfolio</a>
-                      </li>
-                      <li>
-                          <a href="#">Contact</a>
-                      </li>
-                  </ul>
-
-                  <ul class="list-unstyled CTAs">
-                      <li><a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a></li>
-                      <li><a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a></li>
-                  </ul> 
-                -->
-
       </nav>
 
-              
+ <!-- =====================================================
+    					CONTENIDO
+======================================================== -->             
       <div id="content" class="row">
         <section id="contenido">
           <!-- CONTENIDO DE LA PAGINA -->
 
           <div class="col-md-12">
           <!-- ENCABEZADO DE LA PAGINA -->
-          <div id="tituloP">
-            <h3>TARJETAS</h3>
+          <div  class="col-md-12">
+            <h3 id="tituloP">INICIO</h3>
           </div>
 
             <!-- ESPACIO CAROUSEL DE NOTICIAS -->
@@ -181,7 +140,7 @@
               </ol>
               <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                  <img src="img/tetris.gif" alt="Quienes somos">
+                  <img  src="img/tetris.gif" alt="Quienes somos">
                   <div class="carousel-caption">
                     <h3>¿Quienes somos?</h3>
                     <p>Nos dedicamos al blablabla del bleble ble para bliblibli</p>
@@ -215,150 +174,173 @@
           </div>
 
           <!-- CARDS MUESTRA -->
-
-          <div class="row"> 
-            <div class="col-md-6" id="cards1">
-              <div class="card mx-auto row" id="cardta">
-
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.  </p>
-                    </div>
-                    <div class="col-md-4">
-                      <img class="imagenCard" src="img/camera.jpg" alt="camaraaaa">
-                    </div>
-                  </div>
-
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-              <div class="card mx-auto row" id="cardta">
-
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.  </p>
-                    </div>
-                    <div class="col-md-4">
-                      <img class="imagenCard" src="img/camera.jpg" alt="camaraaaa">
-                    </div>
-                  </div>
-
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-              <div class="card mx-auto row" id="cardta">
-
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.  </p>
-                    </div>
-                    <div class="col-md-4">
-                      <img class="imagenCard" src="img/camera.jpg" alt="camaraaaa">
-                    </div>
-                  </div>
-
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- AQUIIIIIIIIIIIIII CARDS MUESTRA 2-->
-            <div class="col-md-6">
-
-
-              <div class="card mx-auto row" id="cardta">
-
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.  </p>
-                    </div>
-                    <div class="col-md-4">
-                      <img class="imagenCard" src="img/camera.jpg" alt="camaraaaa">
-                    </div>
-                  </div>
-
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-              <div class="card mx-auto row" id="cardta">
-
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.  </p>
-                    </div>
-                    <div class="col-md-4">
-                      <img class="imagenCard" src="img/camera.jpg" alt="camaraaaa">
-                    </div>
-                  </div>
-
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-
-
-              <div class="card mx-auto row" id="cardta">
-
-                <div class="card-block">
-                  <h4 class="card-title">Card title</h4>
-                  <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                  <div class="row">
-                    <div class="col-md-8">
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.  </p>
-                    </div>
-                    <div class="col-md-4">
-                      <img class="imagenCard" src="img/camera.jpg" alt="camaraaaa">
-                    </div>
-                  </div>
-
-                  <a href="#" class="card-link">Card link</a>
-                  <a href="#" class="card-link">Another link</a>
-                </div>
-              </div>
-            </div> <!-- FIN CARDS MUESTRA 2-->
-          </div><!-- FIN CARDS MUESTRA TOTAL-->
-
+          <div class="card-columns">
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	<div class="card">
+          		<img class="card-img-top" src="img/camera.jpg" alt="Card image cap">
+          		<div class="card-block">
+          			<h4 class="card-title">Card title</h4>
+          			<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          		</div>
+          		<div class="card-footer">
+          			<small class="text-muted">Last updated 3 mins ago</small>
+          		</div>
+          	</div>
+          	
         </div>
-      </div>
+
+
+
+
+        
     </section>
         <!-- PIE DE PAGINA -->   
-      </div>
-
+    </div>
+<!-- =====================================================
+    					FOOTER
+======================================================== -->
     <footer>
-      <h3> Aqui van OTROS logos y etc</h3>
-      <div class="row">
-      </div>
+<div id="pie">
+
+    <div id="pie2" class="row justify-content-around">
+
+            <div class="col-md-2">
+            <img id="secul" src="img/secul.jpg">
+            </div>
+
+
+            <div class="col-md-2">
+            </div>
+
+            <div class="col-md-2">
+            </div>
+
+
+            <div class="col-md-2">
+            </div>
+
+        </div>
+        </div>
     </footer>
 
 
+    <div id="overlay"></div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-  <!-- Bootstrap Js CDN -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <!-- jQuery Custom Scroller CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 
   <script type="text/javascript">
@@ -371,6 +353,18 @@
         $('#sidebar, #content').toggleClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+        /*
+        if(document.getElementById("overlay").style.display == "block" && screen.width < 768)
+  		{
+      		document.getElementById("overlay").style.display = "none";
+  		}
+  		else 
+  		{
+      		document.getElementById("overlay").style.display = "block";
+  		} 
+  		*/
+
       });
     });
   </script>
