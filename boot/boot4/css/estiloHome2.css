@@ -344,7 +344,7 @@ a.article, a.article:hover {
         margin-left: 0;
     }
     #sidebarCollapse span {
-        display: none;
+        /*display: none;*/
     }
 
     header{
@@ -429,3 +429,44 @@ a.article, a.article:hover {
 .navbar-brand{
     text-align: left;
 }
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 998;
+}
+
+.togSidebar span{
+
+}
+
+#pie2{
+    position: relative;
+    top: 30px;
+    height: 100px;
+}
+
+#pie img{
+    width: 160px;
+    height: 50px;
+
+}
+
+.imgLogo{
+    position: relative;
+    top: 27px;
+    left: 17%;
+    width: 80px;
+    height: 40px;
+}
+
+/*
+00F0F0 azul bonito 
+*/

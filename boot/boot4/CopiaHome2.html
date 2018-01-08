@@ -22,7 +22,7 @@
     					HEADER
 ======================================================== -->
   <header class="sticky-top">
-    <h3> Aqui van los logos y etc</h3>
+    <img class="log imgLogo" src="img/imagen.png">
     <!--BARRA DE NAVEGACIÓN -->
 
    <div class=" ">
@@ -35,13 +35,13 @@
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand" href="#">Inicio</a>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Pricing</a>
-            <a class="nav-item nav-link" href="#">Disabled</a>
+            <a class="nav-item nav-link" href="#">Perfil<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Juegos</a>
+            <a class="nav-item nav-link" href="#">Artículos</a>
+            <a class="nav-item nav-link" href="#">Jam</a>
           </div>
         </div>
       </nav>  
@@ -59,11 +59,11 @@
   			<div class="togSidebar">
           <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
             <i class="glyphicon glyphicon-align-left"></i>
-            <span>Toggle Sidebar</span>
+            <h2>Menú</h2>
           </button>
         </div>
 
-    <h4>MENU REGISTRO</h4>
+    <h4>REGISTRO</h4>
 
       <div class="row" id="datosUsuario">
 
@@ -125,7 +125,7 @@
         <section id="contenido">
           <!-- ENCABEZADO DE LA PAGINA -->
           <div  class="col-md-12">
-            <h3 id="tituloP">TARJETAS</h3>
+            <h3 id="tituloP">INICIO</h3>
           </div>
 
           <!-- CONTENIDO DE LA PAGINA -->
@@ -311,13 +311,34 @@
     					FOOTER
 ======================================================== -->
     <footer>
-      <h3> Aqui van OTROS logos y etc</h3>
-      <div class="row">
-      </div>
+<div id="pie">
+
+    <div id="pie2" class="row justify-content-around">
+
+            <div class="col-md-2">
+            <img id="secul" src="img/secul.jpg">
+            </div>
+
+
+            <div class="col-md-2">
+            <img src="img/imagen.png">
+            </div>
+
+            <div class="col-md-2">
+            <img src="img/imagen.png">
+            </div>
+
+
+            <div class="col-md-2">
+            <img src="img/imagen.png">
+            </div>
+
+        </div>
+        </div>
     </footer>
 
 
-    <div class="overlay"></div>
+    <div id="overlay"></div>
 
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -337,6 +358,17 @@
         $('#sidebar, #content').toggleClass('active');
         $('.collapse.in').toggleClass('in');
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+        /*
+        if(document.getElementById("overlay").style.display == "block" && screen.width < 768)
+  		{
+      		document.getElementById("overlay").style.display = "none";
+  		}
+  		else 
+  		{
+      		document.getElementById("overlay").style.display = "block";
+  		} 
+  		*/
 
       });
     });
