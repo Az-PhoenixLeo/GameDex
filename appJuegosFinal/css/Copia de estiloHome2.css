@@ -1,0 +1,226 @@
+header {
+	
+	background-color: lightblue;
+	width: 100%;*
+	/*boostrap tiene un sticky para el header
+	se pone -->
+	class="sticky-top"
+	*/
+}
+
+footer {
+	background-color: lightblue;
+	/*
+	position: sticky;
+	*/
+	left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+body, html {
+	/*
+	overflow-x: hidden;
+	overflow-y: auto;
+	*/
+}
+
+#navbarTogglerDemo01 {
+	text-align: center;
+}
+
+#menuRegistro {
+	background-color: #ffffe6;
+	/*
+	overflow-y: scroll;
+    overflow-x: hidden;
+	/*position: fixed;
+	margin-top: 8%;*/
+}
+
+#menuRegistro-1 {
+	background-color: #ffa366;
+}
+
+#tarjetas {
+	background-color: #e6ffe6;
+	/*
+	max-height: 500px;
+	max-width: 100%;
+	overflow-y: scroll;
+	*/
+	/*margin-left:33.33%;
+	margin-top: 8%;*/
+	/*
+	overflow-y: scroll;
+	*/
+}
+
+#vacio {
+	background-color: #ffe6f7;
+	/*margin-top: 8%;*/
+}
+
+#imagenUsuario {
+	width: 100%;
+	height: 100px;
+}
+.carousel-item img {
+	width: 100%;
+	height: 300px;
+}
+
+/*
+.card-block img{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	right: -20px;
+}
+*/
+
+/*
+.card img{
+	width: 300px;
+	height: 300px;
+}*/
+
+.imagenCard{
+	width: 100%;
+	height: 200px;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #7386D5;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #6d7fcc;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+#sidebar ul li a:hover {
+    color: #7386D5;
+    background: #fff;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    color: #fff;
+    background: #6d7fcc;
+}
+
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e259';
+    display: block;
+    position: absolute;
+    right: 20px;
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.6em;
+}
+a[aria-expanded="true"]::before {
+    content: '\e260';
+}
+
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #6d7fcc;
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+a.download {
+    background: #fff;
+    color: #7386D5;
+}
+a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    width: calc(100% - 250px);
+    padding: 40px;
+    min-height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#content.active {
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #content {
+        width: 100%;
+    }
+    #content.active {
+        width: calc(100% - 250px);
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+
